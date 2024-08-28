@@ -1,0 +1,9 @@
+.single-slider {
+    position: relative;
+}
+
+.hero__caption h1 {
+    position: relative;
+    z-index: 10;
+    color: white; /* Adjust color as needed */
+}
