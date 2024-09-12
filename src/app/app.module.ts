@@ -14,6 +14,13 @@ import { BannerComponent } from './banner/banner.component';
 import { AboutSiteComponent } from './about-site/about-site.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { BlogAreaComponent } from './blog-area/blog-area.component';
+import { LoginModalComponent } from './login-modal/login-modal.component';
+import { RegisterModalComponent } from './register-modal/register-modal.component';
+import { FormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -28,11 +35,19 @@ import { BlogAreaComponent } from './blog-area/blog-area.component';
     BannerComponent,
     AboutSiteComponent,
     TestimonialComponent,
-    BlogAreaComponent
+    BlogAreaComponent,
+    LoginModalComponent,
+    RegisterModalComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

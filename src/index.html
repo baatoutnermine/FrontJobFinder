@@ -22,7 +22,9 @@
 	<!-- Main CSS-->
 	<link rel="stylesheet" href="css/main.css">
 
-
+<!-- Slick Carousel CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/flaticon.css">
@@ -35,7 +37,8 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@angular/material/prebuilt-themes/indigo-pink.css">
 </head>
 <body>
    <!-- Preloader Start -->
@@ -108,10 +111,25 @@
             <script src="./assets/js/owl.carousel.min.js"></script>
             <script src="./assets/js/slick.min.js"></script>
             <script src="./assets/js/price_rangs.js"></script>
-            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <!-- One Page, Animated-HeadLin -->
             <script src="./assets/js/wow.min.js"></script>
         <script src="./assets/js/animated.headline.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.h1-testimonial-active').slick({
+                    dots: true,                // Afficher les points de navigation
+                    infinite: true,            // Boucle infinie
+                    speed: 500,                // Vitesse de transition
+                    slidesToShow: 1,           // Nombre de slides à afficher
+                    slidesToScroll: 1,         // Nombre de slides à faire défiler
+                    arrows: true,              // Afficher les flèches de navigation
+                });
+            });
+        </script>
+        
         
         <!-- Scrollup, nice-select, sticky -->
             <script src="./assets/js/jquery.scrollUp.min.js"></script>
@@ -132,5 +150,6 @@
             
   
   <app-root></app-root>
+ 
 </body>
 </html>

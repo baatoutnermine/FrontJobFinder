@@ -1,0 +1,24 @@
+<mat-dialog-content class="login-modal-content">
+  <img src="assets/img/logo/log2.jpg" alt="Logo" class="login-logo">
+  <h2 mat-dialog-title class="login-title">Login</h2>
+  
+  <form (ngSubmit)="onSubmit()" #loginForm="ngForm" class="login-form">
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" [(ngModel)]="loginData.email" name="email" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" [(ngModel)]="loginData.password" name="password" required>
+    </mat-form-field>
+
+    <button mat-button type="submit" class="login-button">Login</button>
+  </form>
+
+  <!-- Button to open registration modal -->
+  <div class="register-redirect">
+    <span>Don't have an account?</span>
+    <button mat-button (click)="openRegisterModal()" class="register-button">Register</button>
+  </div>
+</mat-dialog-content>

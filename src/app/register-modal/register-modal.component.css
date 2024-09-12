@@ -1,0 +1,68 @@
+.register-modal-content {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .register-logo {
+    width: 100px; /* Taille du logo */
+    height: auto;
+    margin-bottom: 10px; /* Espace sous le logo */
+  }
+  
+  .register-title {
+    color: red; /* Couleur rouge pour le titre */
+    text-align: center;
+    margin-bottom: 20px; /* Espace sous le titre */
+  }
+  
+  .register-form {
+    width: 100%; /* Largeur du formulaire */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  mat-form-field {
+    width: 100%; /* Largeur de chaque champ */
+    margin-bottom: 15px; /* Espace entre les champs */
+  }
+  
+  .register-icon {
+    width: 300px; /* Taille de l'icône avant le bouton Register */
+    height: 300px;
+    margin-bottom: 15px; /* Espace sous l'icône */
+  }
+  
+  .register-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0559b3; /* Couleur du bouton */
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Espace au-dessus du bouton */
+  }
+  
+  
+
+  
+  .login-redirect {
+    margin-top: 20px; /* Espace au-dessus de la redirection */
+    text-align: center;
+  }
+  
+  
+  .login-button {
+    color: #007bff;
+    background-color: #fa1515; 
+    text-transform: none;
+  }
+  
+  .login-button:hover {
+    color: #0056b3;
+  }
+  
